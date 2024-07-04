@@ -1,5 +1,7 @@
 package main
 
+// Go의 net/http 패키지는 기본적으로 각 요청을 별도의 고루틴에서 처리. 즉, http.ListenAndServe 함수가 내부적으로 각 들어오는 연결에 대해 새로운 고루틴을 생성
+
 import (
 	"fmt"
 	"net/http"
